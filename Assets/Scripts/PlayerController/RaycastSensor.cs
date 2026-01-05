@@ -20,7 +20,7 @@ namespace AdvancedPlayerController
 
         Vector3 origin = Vector3.zero;
         CastDirection castDirection;
-        public float casrLength = 1f;
+        public float castLength = 1f;
 
         public LayerMask layerMask = 255;
 
@@ -39,7 +39,7 @@ namespace AdvancedPlayerController
             Vector3 worldCastDirection = GetCastDirection();
 
             Ray ray = new Ray(worldOrigin, worldCastDirection);
-            Physics.Raycast(ray, out hitInformation, casrLength, layerMask, QueryTriggerInteraction.Ignore);
+            Physics.Raycast(ray, out hitInformation, castLength, layerMask, QueryTriggerInteraction.Ignore);
         }
 
 
