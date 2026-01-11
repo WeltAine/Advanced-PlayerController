@@ -140,7 +140,7 @@ namespace AdvancedPlayerController
         Rigidbody rb;
 
         public void SetVelocity(Vector3 velocity) => rb.linearVelocity = velocity + currentGroundAdjustmentVelocity;
-
+        public Vector3 GetVelocity() => rb.linearVelocity;
 
         public Vector3 GetGroundNormal() => sensor.GetNormal();
     }

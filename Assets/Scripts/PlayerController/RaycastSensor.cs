@@ -3,6 +3,8 @@ using UnityEngine;
 
 namespace AdvancedPlayerController 
 {
+    //投射检测，并且可以获取接触位置的信息
+
     public class RaycastSensor
     {
         //方向枚举
